@@ -4,3 +4,4 @@ function updateObjectWithKeyAndValue (list,ingrd,baked) {
   return Object.assign({}, list, {[ingrd]: baked} )
 }
 updateObjectWithKeyAndValue(recipes,eggs,'cake')
+
