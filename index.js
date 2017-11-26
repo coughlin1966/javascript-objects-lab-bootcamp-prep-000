@@ -17,3 +17,9 @@ function deleteFromObjectByKey (list,ingrd) {
   return newlist
 }
 deleteFromObjectByKey(cake,'Vanilla')
+
+function destructivelyDeleteFromObjectByKey (list,ingrd) {
+  delete list.[ingrd]
+  return list
+}
+destructivelyDeleteFromObjectByKey(recipes,cake)
