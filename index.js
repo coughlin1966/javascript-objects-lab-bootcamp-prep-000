@@ -13,9 +13,9 @@ updateObjectWithKeyAndValue(recipes,eggs,'cake')
 
 
 
-function destructivelyUpdateObjectWithKeyAndValue (list,ingrd) {
+function deleteFromObjectByKey (list,ingrd) {
   var newlist = Object.assign ({},list)
   delete newlist[ingrd]
   return newlist
 }
-destructivelyUpdateObjectWithKeyAndValue(cake,'Vanilla')
+deleteFromObjectByKey(cake,'Vanilla')
