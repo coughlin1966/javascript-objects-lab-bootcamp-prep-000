@@ -6,10 +6,10 @@ function updateObjectWithKeyAndValue (list,ingrd,baked) {
 updateObjectWithKeyAndValue(recipes,eggs,'cake')
 
 function destructivelyUpdateObjectWithKeyAndValue(list,ingrd,baked){
-
+list[ingrd] = baked
+return list
 }
-
-
+destructivelyUpdateObjectWithKeyAndValue(recipes,cake,'Vanilla')
 
 function deleteFromObjectByKey (list,ingrd) {
   var newlist = Object.assign ({},list)
