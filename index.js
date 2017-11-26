@@ -5,11 +5,9 @@ function updateObjectWithKeyAndValue (list,ingrd,baked) {
 }
 updateObjectWithKeyAndValue(recipes,eggs,'cake')
 
-
-
-
-
-
+function destructivelyUpdateObjectWithKeyAndValue(list,ingrd,baked){
+  
+}
 
 
 
